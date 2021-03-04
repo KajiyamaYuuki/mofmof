@@ -13,7 +13,7 @@ ActiveRecord::Schema.define(version: 2021_03_03_105827) do
   create_table "properties", force: :cascade do |t|
     t.string "name"
     t.string "rent"
-    t.string "adress"
+    t.string "address"
     t.string "age"
     t.text "note"
     t.datetime "created_at", null: false

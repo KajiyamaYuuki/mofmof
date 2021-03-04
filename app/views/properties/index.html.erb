@@ -1,4 +1,5 @@
 <h1>物件一覧</h1>
+<%= notice %>
 <table>
   <tr>
   <th>物件名</th>
@@ -11,7 +12,7 @@
   <tr>
   <td><%= property.name %></td>
   <td><%= property.rent %></td>
-  <td><%= property.adress %></td>
+  <td><%= property.address %></td>
   <td><%= property.age %></td>
   <td><%= property.note %></td>
   <td><%= link_to '詳細', property_path(property) %></td>
