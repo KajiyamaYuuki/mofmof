@@ -1,0 +1,15 @@
+<h3>以下の内容で、登録する</h3>
+<%= form_with(model: @property, local:true) do |form| %>
+  <%= form.hidden_field :name %>
+  <%= form.hidden_field :rent %>
+  <%= form.hidden_field :address %>
+  <%= form.hidden_field :age %>
+  <%= form.hidden_field :note %>
+  <p>物件名:<%= @property.name %></p>
+  <p>賃料:<%= @property.rent %></p>
+  <p>住所:<%= @property.address %></p>
+  <p>築年数:<%= @property.age %></p>
+  <p>備考:<%= @property.note %></p>
+  <%= form.submit "登録する" %>
+  <%= form.submit "戻る", name: 'back' %>
+<% end %>
