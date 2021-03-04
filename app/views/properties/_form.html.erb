@@ -9,18 +9,27 @@
       </ul>
     </div>
   <% end %>
-  <div class="form">
-    <%= form.label :name %><br>
+  <div class="property_field">
+    <%= form.label :物件名 %><br>
     <%= form.text_field :name %><br>
-    <%= form.label :rent %><br>
+    <%= form.label :賃料 %><br>
     <%= form.text_field :rent %>円<br>
-    <%= form.label :address %><br>
+    <%= form.label :住所 %><br>
     <%= form.text_field :address %><br>
-    <%= form.label :age %><br>
+    <%= form.label :築年数 %><br>
     <%= form.text_field :age %>年<br>
-    <%= form.label :note %><br>
+    <%= form.label :備考 %><br>
     <%= form.text_area :note %>
   </div>
+  <%= form.fields_for :nearest_stations do |nearest_station| %>
+  <div class="nearest_station_field">
+    <%= nearest_station.label :路線名 %><br>
+    <%= nearest_station.text_field :line %><br>
+    <%= nearest_station.label :駅名 %><br>
+    <%= nearest_station.text_field :station %><br>
+    <%= nearest_station.label :徒歩分数 %><br>
+    <%= nearest_station.text_field :time %>分<br>
+  </div>
+  <% end %>
   <%= form.submit "登録" %>
 <% end %>
-<%= link_to "戻る", properties_path %>
