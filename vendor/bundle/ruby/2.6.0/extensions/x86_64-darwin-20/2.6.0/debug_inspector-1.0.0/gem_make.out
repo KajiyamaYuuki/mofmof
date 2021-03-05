@@ -1,0 +1,15 @@
+current directory: /Users/kaji80sx/workspace/dev-exam/vendor/bundle/ruby/2.6.0/gems/debug_inspector-1.0.0/ext/debug_inspector
+/Users/kaji80sx/.rbenv/versions/2.6.3/bin/ruby -I /Users/kaji80sx/.rbenv/versions/2.6.3/lib/ruby/2.6.0 -r ./siteconf20210304-18247-l46jus.rb extconf.rb
+creating Makefile
+
+current directory: /Users/kaji80sx/workspace/dev-exam/vendor/bundle/ruby/2.6.0/gems/debug_inspector-1.0.0/ext/debug_inspector
+make "DESTDIR=" clean
+
+current directory: /Users/kaji80sx/workspace/dev-exam/vendor/bundle/ruby/2.6.0/gems/debug_inspector-1.0.0/ext/debug_inspector
+make "DESTDIR="
+compiling debug_inspector.c
+linking shared-object debug_inspector.bundle
+
+current directory: /Users/kaji80sx/workspace/dev-exam/vendor/bundle/ruby/2.6.0/gems/debug_inspector-1.0.0/ext/debug_inspector
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 debug_inspector.bundle ./.gem.20210304-18247-75ka08
